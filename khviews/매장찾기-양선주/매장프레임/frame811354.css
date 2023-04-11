@@ -867,7 +867,7 @@
 .frame811354-footer7 {
   top: 2193px;
   left: 0px;
-  width:100%;
+  width:%;
   display: flex;
   padding: 80px 64px;
   overflow: hidden;
@@ -1019,7 +1019,7 @@
 .frame811354-layout155 {
   top: 0px;
   left: 0px;
-  width: 80%;
+  width: 100%;
   height: 860px;
   display: flex;
   padding: 112px 64px;
