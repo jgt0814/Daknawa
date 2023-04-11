@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원가입</title>
+    <title>내 정보</title>
     <style>
         h1 { text-align : center; }
 
@@ -68,7 +68,7 @@
 
         <br><br><br><br>
         
-        <h1>회원가입</h1>
+        <h1>내 정보</h1>
 
         <br>
 
@@ -79,19 +79,15 @@
                 <td>아이디 *</td>
             </tr>
             <tr>
-                <td><input type="text" name="userId" minlength="6" maxlength="12" placeholder="6 ~ 12 글자 이내 작성 (영문, 숫자로)" required></td>
+                <td><input type="text" name="userId" minlength="6" maxlength="12" placeholder="" required disabled></td>
             </tr>
             <tr>
                 <td>비밀번호 *</td>
             </tr>
             <tr>
-                <td><input type="password" name="userPwd" minlength="8" maxlength="15" placeholder="8 ~ 15 글자 이내 작성 (영문 + 숫자 + 특수문자[ex. !@$-] 로)" required></td>
-            </tr>
-            <tr>
-                <td>비밀번호확인 *</td>
-            </tr>
-            <tr>
-                <td><input type="password" name="userPwd2" minlength="8" maxlength="15" placeholder="위의 설정한 비밀번호와 일치하게 작성" required></td>
+                <td>
+                    <button type="button" style="margin : 0px 0px 5px 0px;">변경하러가기</button>
+                </td>
             </tr>
             <tr>
                 <td>닉네임 설정 *</td>
