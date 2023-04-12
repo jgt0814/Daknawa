@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+        h1 { text-align : center; }
+
+        input, button {
+            width : 320px;
+            height : 40px;
+            border-style : inset;
+            border-width : 3px;
+        }
+
+        input {
+            box-sizing : border-box;
+            margin-bottom : 5px;
+            font-size : 11px;
+        }
+
+        button {
+            background-color : black;
+            color : white;
+            margin : 20px 0px 5px 0px;
+        }
+
+        button:hover {
+            background-color : gray;
+        }
+
+        a {
+            text-decoration : none;
+            color : black;
+        }
+
+        .div1 {
+            width : 320px;
+            text-align: right;
+            margin : auto;
+        }
+
+        .div2 { font-size : 12px; }
+
+        .pass {
+            text-align : center;
+            width : 100%;
+            margin-left : 60px;
+        }
+
+        .sign {
+            text-align : right;
+            width : 30%;
+        }
+
+        td { text-align: left; }
+
+        .gender1, .gender2 {
+            width : 15px;
+            height : 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <form id="loginForm" action="login.me" method="post">
+
+        <br><br><br><br>
+        
+        <h1>회원가입</h1>
+
+        <br>
+
+        <div class="div1">
+
+        <table>
+            <tr>
+                <td>아이디 *</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="userId" minlength="6" maxlength="12" placeholder="6 ~ 12 글자 이내 작성 (영문, 숫자로)" required></td>
+            </tr>
+            <tr>
+                <td>비밀번호 *</td>
+            </tr>
+            <tr>
+                <td><input type="password" name="userPwd" minlength="8" maxlength="15" placeholder="8 ~ 15 글자 이내 작성 (영문 + 숫자 + 특수문자[ex. !@$-] 로)" required></td>
+            </tr>
+            <tr>
+                <td>비밀번호확인 *</td>
+            </tr>
+            <tr>
+                <td><input type="password" name="userPwd2" minlength="8" maxlength="15" placeholder="위의 설정한 비밀번호와 일치하게 작성" required></td>
+            </tr>
+            <tr>
+                <td>닉네임 설정 *</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="userNickname" minlength="2" maxlength="10" placeholder="2 ~ 10 글자 이내 작성 (영문, 숫자, 한글)" required></td>
+            </tr>
+            <tr>
+                <td>이름 *</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="userName" minlength="2" maxlength="10" required></td>
+            </tr>
+            <tr>
+                <td>이메일 *</td>
+            </tr>
+            <tr>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>전화번호 *</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="phone" maxlength="11" required></td>
+            </tr>
+            <tr>
+                <td>생년월일</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="birth" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td>성별</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="gender" value="남" style="width : 15px; height : 15px;"><label for="gender" style="font-size : 15px; margin-right : 15px;">남</label>
+                    <input type="radio" name="gender" value="여" style="width : 15px; height : 15px;"><label for="gender" style="font-size : 15px;">여</label>
+                </td>
+            </tr>
+            <tr>
+                <td>주소</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="address" maxlength="100"></td>
+            </tr>
+            <tr>
+                <td><button type="submit">가입하기</button></td>
+            </tr>
+        </table>
+        </div>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- swiper.js 라이브러리추가 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+
+    <style>
+   
+
+    /* 이미지 사이즈 조절 */
+    .swiper-slide>img {
+        width : 50%;
+        height : 50%;
+    }
+
+    /* 화살표 버튼색 변경 (기본색은 파란색) */
+    div[class^=swiper-button] {
+        color : white;
+        /* display : none; */ /* 아니면 안보이게 숨기기도 가능 */
+    }
+    </style>
+
+</head>
+<body>
+    
+    <!-- 
+        * 참고 링크
+        https://iridescent-zeal.tistory.com/150
+    -->
+    <div id="content_1">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/c1.jpg"></div>
+                <div class="swiper-slide"><img src="img/c2.jpg"></div>
+                <div class="swiper-slide"><img src="img/c3.png"></div>
+                <div class="swiper-slide"><img src="img/c4.png"></div>
+                <div class="swiper-slide"><img src="img/c5.png"></div>
+            </div>
+        
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+
+    <script>
+        // 슬라이더 동작 정의
+        const swiper = new Swiper('.swiper', {
+            autoplay : {
+                delay : 3000 // 3초마다 이미지 변경
+            },
+            loop : true, //반복 재생 여부
+            slidesPerView : 1, // 이전, 이후 사진 미리보기 갯수
+            pagination: { // 페이징 버튼 클릭 시 이미지 이동 가능
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            navigation: { // 화살표 버튼 클릭 시 이미지 이동 가능
+                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next'
+            }
+        }); 
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+.layout155-container {
+  min-height: 100vh;
+}
+.layout155-layout155 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 112px 64px;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  flex-direction: column;
+  background-color: var(--dl-color-default-white);
+}
+.layout155-placeholder-image {
+  width: auto;
+  height: 700px;
+  position: relative;
+  align-self: stretch;
+  border-color: transparent;
+  margin-bottom: 80px;
+}
+.layout155-content {
+  width: 768px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  flex-direction: column;
+}
+.layout155-section-title {
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: center;
+  border-color: transparent;
+  margin-bottom: 24px;
+  flex-direction: column;
+}
+.layout155-text {
+  color: var(--dl-color-default-black);
+  height: auto;
+  align-self: auto;
+  text-align: center;
+  line-height: 150%;
+  margin-right: 0;
+  margin-bottom: 16px;
+}
+.layout155-content1 {
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+  border-color: transparent;
+  flex-direction: column;
+}
+.layout155-text02 {
+  color: var(--dl-color-default-black);
+  height: auto;
+  align-self: stretch;
+  text-align: center;
+  line-height: 120.00000476837158%;
+  margin-right: 0;
+  margin-bottom: 24px;
+}
+.layout155-text04 {
+  color: var(--dl-color-default-black);
+  height: auto;
+  align-self: stretch;
+  text-align: center;
+  line-height: 150%;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.layout155-actions {
+  display: flex;
+  padding: 16px 0 0 0;
+  position: relative;
+  align-items: center;
+  border-color: transparent;
+}
+.layout155-button {
+  display: flex;
+  padding: 12px 24px;
+  position: relative;
+  box-sizing: content-box;
+  align-items: center;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  margin-right: 24px;
+  justify-content: center;
+}
+.layout155-text06 {
+  color: var(--dl-color-default-black);
+  height: auto;
+  align-self: auto;
+  text-align: left;
+  line-height: 150%;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.layout155-button1 {
+  display: flex;
+  position: relative;
+  box-sizing: content-box;
+  align-items: center;
+  border-color: transparent;
+  justify-content: center;
+}
+.layout155-text08 {
+  color: var(--dl-color-default-black);
+  height: auto;
+  align-self: auto;
+  text-align: left;
+  line-height: 150%;
+  margin-right: 8px;
+  margin-bottom: 0;
+}
