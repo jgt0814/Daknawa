@@ -5,7 +5,7 @@
   width: 100%;
   height: auto;
   display: flex;
-  padding: 112px 64px;
+  padding: 50px 64px;
   overflow: hidden;
   position: relative;
   align-items: center;
@@ -21,7 +21,7 @@
   align-self: stretch;
   align-items: flex-start;
   border-color: transparent;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   flex-direction: column;
 }
 .career17-text {
@@ -41,15 +41,6 @@
   border-color: transparent;
   flex-direction: column;
 }
-.career17-text01 {
-  color: var(--dl-color-default-black);
-  height: auto;
-  align-self: stretch;
-  text-align: left;
-  line-height: 120.00000476837158%;
-  margin-right: 0;
-  margin-bottom: 0;
-}
 .career17-content1 {
   display: flex;
   position: relative;
@@ -60,6 +51,9 @@
 }
 .career17-card {
   display: flex;
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 32px;
   position: relative;
   align-self: stretch;
@@ -67,6 +61,8 @@
   border-color: rgba(0, 0, 0, 1);
   border-style: solid;
   border-width: 1px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 32px;
   flex-direction: column;
 }
@@ -148,6 +144,9 @@
 }
 .career17-card1 {
   display: flex;
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 32px;
   position: relative;
   align-self: stretch;
@@ -236,6 +235,9 @@
 }
 .career17-card2 {
   display: flex;
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 32px;
   position: relative;
   align-self: stretch;
