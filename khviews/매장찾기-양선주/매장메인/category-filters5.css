@@ -1,11 +1,11 @@
 .category-filters5-container {
-  min-height: 100vh;
+  min-height: 30vh;
 }
 .category-filters5-category-filters5 {
   width: 100%;
   height: auto;
   display: flex;
-  padding: 112px 64px;
+  padding: 5px 64px;
   overflow: hidden;
   position: relative;
   align-items: center;
@@ -58,7 +58,7 @@
   align-items: center;
   flex-shrink: 0;
   border-color: transparent;
-  margin-bottom: 32px;
+  margin-bottom: 50px;
   justify-content: space-between;
 }
 .category-filters5-button {
@@ -321,6 +321,7 @@
   margin-bottom: 0;
 }
 .category-filters5-select {
+  width: 250px;
   display: flex;
   padding: 12px;
   position: relative;
@@ -387,6 +388,7 @@
   margin-bottom: 0;
 }
 .category-filters5-select1 {
+  width: 250px;
   display: flex;
   padding: 12px;
   position: relative;
@@ -421,6 +423,7 @@
   align-self: stretch;
   align-items: flex-start;
   border-color: transparent;
+  margin-right: 32px;
   flex-direction: column;
 }
 .category-filters5-row5 {
@@ -452,6 +455,23 @@
   margin-bottom: 0;
 }
 .category-filters5-select2 {
+  width: 250px;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 12px;
+  position: relative;
+  align-self: stretch;
+  box-sizing: content-box;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  background-color: var(--dl-color-default-white);
+}
+.category-filters5-select3 {
+  width: 250px;
+  flex-wrap: wrap;
   display: flex;
   padding: 12px;
   position: relative;
