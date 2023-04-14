@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    .outer {
+        margin: 10%;
+        margin-top: 10%;
+    }
+    
+    table {
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+    td, th {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: left;
+    }
+
+    .btn-group { float: right; }
+
+    #list, #insertList { /* 버튼크기를 지정 */
+        height : 40px; 
+        width : 90px;
+    }
+
+    #left-btn, #right-btn { float : right; } 
+
+    #page-numbers { float : left; }
+
+    .search-container { float : right }
+
+    </style>
+    </head>
+    <body>
+
+        <div class="outer">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="8">
+                        <div class="category">
+                            <label for="category"></label>
+                            <select id="category">
+                                <option value="all">전체</option>
+                                <option value="notice">공지사항</option>
+                                <option value="free">자유게시판</option>
+                            </select>
+                        </div>
+
+                        <div class="search-container"> <!-- 검색창을 감싸는 div -->
+                            <input type="text" placeholder="검색어를 입력하세요"> <!-- 검색창 추가 -->
+                            <button type="submit">검색</button> <!-- 검색 버튼 추가 -->
+                        </div>
+
+
+                        <h1>자유게시판</h1> 자유롭게 당신의 의견을 전해주세요!  
+                        <span class="btn-group"> <!-- 버튼 관련 class -->
+                            <button id="list">내게시물</button>
+                            <button id="insertList">글작성</button></th>
+                        </span>
+                </tr>
+                <tr>
+                    <th width="1%">번호</th>
+                    <th width="60%">글제목</th>
+                    <th width="10%">작성자</th>
+                    <th width="3%">조회수</th>
+                    <th width="10%">작성일</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>첫 번째 글</td>
+                    <td>작성자1</td>
+                    <td>10</td>
+                    <td>2023-04-04</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>두 번째 글</td>
+                    <td>작성자2</td>
+                    <td>10</td>
+                    <td>2023-04-04</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>세 번째 글</td>
+                    <td>작성자3</td>
+                    <td>10</td>
+                    <td>2023-04-04</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>네 번째 글</td>
+                    <td>작성자3</td>
+                    <td>10</td>
+                    <td>2023-04-04</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>다섯 번째 글</td>
+                    <td>작성자3</td>
+                    <td>10</td>
+                    <td>2023-04-04</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>여섯 번째 글</td>
+                    <td>작성자3</td>
+                    <td>10</td>
+                    <td>2023-04-04</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>일곱 번째 글</td>
+                    <td>작성자3</td>
+                    <td>10</td>
+                    <td>2023-04-04</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>여덟 번째 글</td>
+                    <td>작성자3</td>
+                    <td>10</td>
+                    <td>2023-04-04</td>
+                </tr>
+            </tbody> 
+        </table>    
+
+        <br>
+
+        <table align="center">
+        <ul class="pagination">
+            <li class="page-item disabled">
+            <a class="page-link" href="#">&laquo;</a>
+            </li>
+            <li class="page-item active">
+            <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+            <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+            <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+            <a class="page-link" href="#">4</a>
+            </li>
+            <li class="page-item">
+            <a class="page-link" href="#">5</a>
+            </li>
+            <li class="page-item">
+            <a class="page-link" href="#">&raquo;</a>
+            </li>
+        </ul>
+        </div>
+                </table>    
+                </div>
+
+        <script>
+            var totalPages = 5;
+            var currentPage = 1;
+            var pageNumbers = document.getElementById("page-numbers");
+
+        // 페이지 버튼 생성
+            for (var i = 1; i <= totalPages; i++) {
+                var button = document.createElement("button");
+                    button.innerHTML = i;
+                    button.addEventListener("click", function() {
+                    currentPage = parseInt(this.innerHTML);
+                    updateButtons();
+              });
+                pageNumbers.appendChild(button);
+            }
+        </script>
+
+</body>
+</html>

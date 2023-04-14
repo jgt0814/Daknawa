@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비밀번호 변경</title>
+    <style>
+        h1 { text-align : center; }
+
+        input, button {
+            width : 320px;
+            height : 40px;
+            border-style : inset;
+            border-width : 3px;
+        }
+
+        input {
+            box-sizing : border-box;
+            margin-bottom : 5px;
+            font-size : 11px;
+        }
+
+        button {
+            background-color : black;
+            color : white;
+            margin : 5px 0px 5px 0px;
+        }
+
+        button:hover {
+            background-color : gray;
+        }
+
+        a {
+            text-decoration : none;
+            color : black;
+        }
+
+        .div1 {
+            width : 320px;
+            text-align: right;
+            margin : auto;
+        }
+
+        .pass {
+            text-align : center;
+            width : 70%;
+            margin-left : 55px;
+        }
+
+        .sign {
+            text-align : right;
+            width : 30%;
+            margin-right : 7px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <form id="newPassword" action="" method="post">
+
+        <br><br><br><br>
+        
+        <h1>비밀번호 변경</h1>
+
+        <br>
+
+        <div class="div1">
+
+        <table>
+            <tr>
+                <td style="text-align: left;">새 비밀번호</td>
+            </tr>
+            <tr>
+                <td><input type="password" name="newPwd" minlength="8" maxlength="15" placeholder="8 ~ 15 글자 이내 작성 (영문 + 숫자 + 특수문자[ex. !@$-] 로)" required></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">비밀번호 확인</td>
+            </tr>
+            <tr>
+                <td><input type="password" name="userPwd" maxlength="15" placeholder="위의 설정한 비밀번호와 일치하게 작성" required></td>
+            </tr>
+            <tr>
+                <td><button type="submit">완료</button></td>
+            </tr>
+        </table>
+        </div>
+
+    </form>
+
+</body>
+</html>

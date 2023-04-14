@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 탈퇴</title>
+    <style>
+        h1, h4 { text-align : center; }
+
+        input, button {
+            width : 320px;
+            height : 40px;
+            border-style : inset;
+            border-width : 3px;
+        }
+
+        input {
+            box-sizing : border-box;
+            margin : 50px 0px 50px 0px;
+        }
+
+        button {
+            background-color : black;
+            color : white;
+            margin : 5px 0px 5px 0px;
+        }
+
+        button:hover {
+            background-color : gray;
+            cursor : pointer;
+        }
+
+        a {
+            text-decoration : none;
+            color : black;
+        }
+
+        .div1 {
+            width : 320px;
+            text-align : right;
+            margin : auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <form id="delete-member" action="" method="post">
+
+        <br><br><br><br>
+        
+        <h1>회원 탈퇴</h1>
+
+        <h4>탈퇴하시려면 현재 비밀번호를 입력해주세요.</h4>
+
+        <div class="div1">
+
+            <table>
+                <tr>
+                    <td><input type="password" name="userPwd" minlength="8" maxlength="15" required></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">탈퇴하기</button></td>
+                </tr>
+            </table>
+
+        </div>
+
+    </form>
+
+</body>
+</html>
